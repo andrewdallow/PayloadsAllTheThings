@@ -5,6 +5,10 @@ on:
     - cron: '0 0 * * *' # every day
   workflow_dispatch: # on button click
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   sync:
 
